@@ -1,0 +1,24 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{min-height:100vh;background:linear-gradient(135deg,#ffe5e5,#ffb6c1);display:flex;justify-content:center;align-items:center;overflow:hidden;text-align:center}
+.container{max-width:420px;width:100%;padding:20px;position:relative;z-index:2}
+.title{font-family:Pacifico,cursive;font-size:2.2rem;color:#ff4d6d;animation:float 3s ease-in-out infinite}
+.subtitle{margin:15px 0;color:#333}
+.doodle{font-size:3rem;animation:bounce 2s infinite;margin-bottom:10px}
+.hug{animation:hug 1.5s infinite}
+.love-meter{background:#fff;border-radius:20px;overflow:hidden;margin:15px 0}
+.love-fill{background:linear-gradient(90deg,#ff4d6d,#ff85a2);padding:8px;color:#fff;font-weight:600}
+.buttons{position:relative;height:60px}
+.btn{padding:12px 22px;border-radius:30px;border:none;cursor:pointer;font-size:1rem}
+.btn.yes{background:#ff4d6d;color:#fff;box-shadow:0 8px 20px rgba(255,77,109,.4);text-decoration:none}
+.btn.no{background:#ccc;position:absolute}
+.card{background:#fff;border-radius:20px;padding:20px;margin:20px 0;animation:popIn .8s ease}
+.footer-note{font-family:Pacifico,cursive;color:#ff4d6d}
+.tap-note{font-size:.8rem;opacity:.6;margin-top:10px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:20px 0}
+.photo{background:#fff;border-radius:16px;height:120px;display:flex;align-items:center;justify-content:center;font-size:2rem;animation:popIn .8s ease}
+.heart{position:absolute;bottom:-20px;font-size:20px;animation:rise 6s linear infinite}
+@keyframes rise{to{transform:translateY(-120vh);opacity:0}}
+@keyframes bounce{50%{transform:translateY(-8px)}}
+@keyframes float{50%{transform:translateY(-6px)}}
+@keyframes popIn{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes hug{50%{transform:scale(1.1)}}
